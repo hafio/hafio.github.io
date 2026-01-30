@@ -1,5 +1,3 @@
-[Back to Main](https://hafio.github.io)
-
 # How Small Is “Small”? Understanding Message Size in Event-Driven Systems
 
 You’ve probably heard the advice:
