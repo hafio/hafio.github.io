@@ -6,4 +6,4 @@ I have a personal website (TBP) but this github page is where I get lazy and sto
 
 ## Articles
 
-- [How Small Is “Small”? Understanding Message Size in Event-Driven Systems](https://hafio.github.io/Technology/Optimal-Message-Size.md)
+- [How Small Is “Small”? Understanding Message Size in Event-Driven Systems](https://hafio.github.io/Technology/Optimal-Message-Size)
