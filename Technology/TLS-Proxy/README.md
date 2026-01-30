@@ -50,8 +50,6 @@ The proxy forwards encrypted bytes. It operates mostly at **Layer 4 (TCP)**.
 
 This is a **secure pipe**, not an application-aware component.
 
----
-
 ## 🔓 TLS Termination (Edge Termination / Offload)
 
 The proxy **decrypts** TLS from the client.
@@ -99,8 +97,6 @@ Once TLS ends at the proxy, it can see HTTP/gRPC/etc. That unlocks major capabil
 
 Passthrough cannot do this.
 
----
-
 ## 🛡 Application Security at the Edge
 
 * WAF
@@ -111,8 +107,6 @@ Passthrough cannot do this.
 * Request normalization
 
 With passthrough, the proxy is blind to attacks at the HTTP layer.
-
----
 
 ## 📊 Observability
 
@@ -125,8 +119,6 @@ Termination enables:
 * Detailed logs
 
 Passthrough gives you TCP metrics, not application visibility.
-
----
 
 ## ⚙ Traffic Optimization
 
@@ -215,8 +207,6 @@ You’ve now said:
 
 That assumption is increasingly unsafe.
 
----
-
 ## 🚨 Risks of Plaintext Internal Traffic
 
 ### 1. Lateral movement = data exposure
@@ -238,8 +228,6 @@ They may read internal traffic:
 
 TLS protected you from the internet — not from the breach after entry.
 
----
-
 ### 2. Header spoofing risk
 
 Backends often trust proxy headers:
@@ -250,8 +238,6 @@ Backends often trust proxy headers:
 
 If services are reachable internally via HTTP, an attacker can call them directly and spoof headers unless tightly restricted.
 
----
-
 ### 3. Weak zero-trust posture
 
 Modern security assumes:
@@ -259,8 +245,6 @@ Modern security assumes:
 > The internal network is hostile.
 
 Plaintext internal traffic contradicts that assumption.
-
----
 
 ### 4. Compliance pressure
 
@@ -301,8 +285,6 @@ You get:
 * WAF and routing
 * Observability
 * Encryption in transit internally
-
----
 
 ### 🔐 Even better: mTLS internally
 
