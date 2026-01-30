@@ -1,8 +1,4 @@
-Nice, this is the *full story* version — the one architects wish they had before someone says “just turn on TLS at the load balancer.” 😄
-
----
-
-# TLS Termination vs TLS Passthrough — And the Risky Middle Ground Most Architectures Sit In
+# TLS Termination vs TLS Passthrough — And the Risky Middle Ground
 
 When you deploy a proxy, load balancer, API gateway, or ingress in front of services, you’re making a decision that is far more than technical:
 
